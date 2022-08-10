@@ -73,7 +73,7 @@ def playgolf():
 
 		#keep track of the total par for the course the players played on
 		coursepar = par + coursepar
-		time.sleep(3)
+		time.sleep(1)
 
 	else:
 		print("The round has ended.")
