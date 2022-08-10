@@ -62,11 +62,6 @@ def playgolf():
 		#player 4
 		#-----------------------
 
-		player4swing = random.randint(2,8)
-		print(str(player4.name) + ' took ' + str(player4swing) + ' number of strokes to finish the hole')
-		player4rs = player4swing - par
-		player4.score = player4.score + player4rs
-		print(str(player4.name) + " shot a " + str(player4rs) + " their score is now" + str(player4.score))
 
 		#loop iteration update
 		numberofholes = numberofholes + 1
