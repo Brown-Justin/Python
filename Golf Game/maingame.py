@@ -26,15 +26,36 @@ def playgolf():
 
 		for golfer in playerlist:
 			#roll a number for the players swing
-			golferswing = random.randint(2,8)
-			print( str(golfer.name) + " took " + str(golferswing) + " to complete the hole ", sep = ' ')
-			# calculate the golfers round score (rs) by subtracting par
-			golferrs = golferswing - par
-			#now change the golfers score in the golfer object
-			golfer.score = golfer.score + golferrs
-			#print feedback
-			print(str(golfer.name) + " shot a " + str(golferrs) + " their score is now" + str(golfer.score))
-			#time.sleep(1)
+			if par == 5:
+				golferswing = random.randint(3,7)
+				print( str(golfer.name) + " took " + str(golferswing) + " to complete the hole ", sep = ' ')
+				# calculate the golfers round score (rs) by subtracting par
+				golferrs = golferswing - par
+				#now change the golfers score in the golfer object
+				golfer.score = golfer.score + golferrs
+				#print feedback
+				print(str(golfer.name) + " shot a " + str(golferrs) + " their score is now" + str(golfer.score))
+				#time.sleep(1)
+			elif par == 4:
+				golferswing = random.randint(2,6)
+				print( str(golfer.name) + " took " + str(golferswing) + " to complete the hole ", sep = ' ')
+				# calculate the golfers round score (rs) by subtracting par
+				golferrs = golferswing - par
+				#now change the golfers score in the golfer object
+				golfer.score = golfer.score + golferrs
+				#print feedback
+				print(str(golfer.name) + " shot a " + str(golferrs) + " their score is now" + str(golfer.score))
+				#time.sleep(1)
+			else:
+				golferswing = random.randint(1,5)
+				print( str(golfer.name) + " took " + str(golferswing) + " to complete the hole ", sep = ' ')
+				# calculate the golfers round score (rs) by subtracting par
+				golferrs = golferswing - par
+				#now change the golfers score in the golfer object
+				golfer.score = golfer.score + golferrs
+				#print feedback
+				print(str(golfer.name) + " shot a " + str(golferrs) + " their score is now" + str(golfer.score))
+				#time.sleep(1)
 		#update the total course par
 		coursepar = par + coursepar
 		#iterate the loop
