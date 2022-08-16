@@ -1,5 +1,4 @@
 # Python
-Collection of Python Projects
 
 Hey! 
 
