@@ -8,12 +8,17 @@ player2 = Player("Matt", 0)
 player3 = Player("Ed", 0)
 player4 = Player("Isaac", 0)
 coursepar = 0
+playerlist = [player1, player2, player3, player4]
+
 
 #play golf
 def playgolf():
 	global coursepar
 	numberofholes = 1
 	while numberofholes < 19:
+
+		
+
 		#every loop represents one holes of golf played
 		print("Hole Number: " + str(numberofholes))
 		
@@ -24,7 +29,6 @@ def playgolf():
 		#-----------------------
 		#player1
 		#-----------------------
-
 		#then each player will take a turn rolling for a swing. 
 		player1swing = random.randint(2,8)
 		print(str(player1.name) + ' took ' + str(player1swing) + ' number of strokes to finish the hole')
@@ -62,7 +66,11 @@ def playgolf():
 		#player 4
 		#-----------------------
 
-
+		player4swing = random.randint(2,8)
+		print(str(player4.name) + ' took ' + str(player4swing) + ' number of strokes to finish the hole')
+		player4rs = player4swing - par
+		player4.score = player4.score + player4rs
+		print(str(player4.name) + " shot a " + str(player4rs) + " their score is now" + str(player4.score))
 
 		#loop iteration update
 		numberofholes = numberofholes + 1
